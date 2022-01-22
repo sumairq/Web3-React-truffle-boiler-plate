@@ -11,6 +11,21 @@ You can make requests with simple window.ethereum object made available by metam
 - You get a provider in the windows context, injected by the metamask i.e `windows.ethereum`
 - Then you create a new instance of Web3 to which you pass your provider as the argument `new Web3(provider)` while working with a private blockchain like ganache our provider can be obtained as  `new Web3.providers.HttpProvider("http://localhost:7545")` 
 
+_ _ _
+
+ - To get the currenctly connected account from the metamask wallet we need to use `web3Api.web3.eth.getAccounts()` in a hook like this:
+  Our hook will look like this
+    `useEffect(() => {
+const  getAccount  =  async () => {
+const  accounts  =  await  web3Api.web3.eth.getAccounts()
+setAccount(accounts[0])
+}
+web3Api.web3  &&  getAccount()
+}, [web3Api.web3]);`
+ 
+ - Our hook will supply the currently connected account to the state `account` we use the `useState` hook like this   `const [account, setAccount] =  useState(null);`
+
+
 
 
 ## Available Scripts
