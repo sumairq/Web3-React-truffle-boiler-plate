@@ -8,6 +8,11 @@ This project was bootstrapped with [Create React App] and truffle init and is co
 
 You can make requests with simple window.ethereum object made available by metamask but you should consider using the Web3.js library as it makes available many other important functionalities.
 
+- You get a provider in the windows context, injected by the metamask i.e `windows.ethereum`
+- Then you create a new instance of Web3 to which you pass your provider as the argument `new Web3(provider)` while working with a private blockchain like ganache our provider can be obtained as  `new Web3.providers.HttpProvider("http://localhost:7545")` 
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
