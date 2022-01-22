@@ -2,7 +2,7 @@
 
 # Getting Started with Create React App 
 
-This project was bootstrapped with [Create React App] and truffle init.
+This project was bootstrapped with [Create React App] and truffle init and is configured to work with a local blockchain like Ganache.
 
 ## Student notes
 
