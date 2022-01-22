@@ -1,6 +1,12 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Getting Started with Create React App 
+
+This project was bootstrapped with [Create React App] and truffle init.
+
+## Student notes
+
+You can make requests with simple window.ethereum object made available by metamask but you should consider using the Web3.js library as it makes available many other important functionalities.
 
 ## Available Scripts
 
