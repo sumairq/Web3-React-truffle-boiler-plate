@@ -1,0 +1,7 @@
+web3.js is a collection of libraries that allow you to interact with a local or remote ethereum node.
+instance.addFunds({value: "2000000000000000000", from: accounts[2]})
+instance.getFunderAtIndex(0)
+const instance = await Faucet.deployed()
+
+
+instance.withdraw("500000000000000000", {from: accounts[1]})
